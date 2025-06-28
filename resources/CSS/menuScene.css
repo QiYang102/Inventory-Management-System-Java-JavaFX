@@ -1,0 +1,14 @@
+.pane
+{
+    -fx-background-color: white;
+    -fx-background-radius: 15;
+    -fx-effect:  dropshadow(two-pass-box, rgb(157,152,152), 1, 0.6, 2, 3);
+}
+
+
+.pane:hover
+{
+    -fx-background-color: #00d9ff !important;
+}
+
+

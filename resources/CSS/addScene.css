@@ -1,0 +1,22 @@
+.text-field {
+    -fx-pref-width: 270px; /* 90% of 300px */
+    -fx-padding: 1em;
+    -fx-font-size: 1em;
+    -fx-border-color: grey;
+    -fx-border-width: 0.1em;
+    -fx-border-radius: 2em;
+    -fx-background-color:  #F8F9FA;
+    -fx-text-fill: #000000;
+}
+
+.text-field:focused {
+    -fx-border-color: #000000;
+}
+
+/* Label */
+.input-label {
+    -fx-text-fill: grey;
+    -fx-background-color: #F8F9FA;
+    -fx-font-size: 1em;
+    -fx-padding: 0 0.5em;
+}

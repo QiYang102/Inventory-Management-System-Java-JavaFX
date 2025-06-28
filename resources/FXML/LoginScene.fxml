@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1056.0" style="-fx-background-color: #F8F9FA;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.a_ConLogin">
+    <children>
+      <AnchorPane layoutX="518.0" prefHeight="578.0" prefWidth="540.0">
+         <children>
+            <ImageView fitHeight="661.0" fitWidth="866.0" layoutX="-326.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/loginPic.png" />
+               </image>
+            </ImageView>
+            <AnchorPane fx:id="anchorPaneLogin" layoutX="-518.0" prefHeight="576.0" prefWidth="489.0" style="-fx-background-color: #F8FAFB; -fx-background-radius: 15;">
+               <children>
+                    <Button id="LoginButton" fx:id="loginButton" layoutX="212.0" layoutY="422.0" mnemonicParsing="false" onAction="#loginButtonClick" prefHeight="26.0" prefWidth="83.0" stylesheets="@../CSS/loginScene.css" text="Login" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="13.0" />
+                     </font></Button>
+                    <TextField id="usernameTextField" fx:id="usernameTextField" alignment="CENTER" layoutX="140.0" layoutY="288.0" prefHeight="27.0" prefWidth="228.0" promptText="ex Johnson Ming" style="-fx-background-color: transparent;" stylesheets="@../CSS/loginScene.css">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font></TextField>
+                    <Label layoutX="140.0" layoutY="263.0" prefHeight="22.0" prefWidth="99.0" text="Username" textAlignment="CENTER">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Label>
+                    <Label id="outputLabel" fx:id="outputLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="84.0" layoutY="468.0" prefHeight="18.0" prefWidth="338.0" textAlignment="CENTER">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="140.0" layoutY="333.0" prefHeight="27.0" prefWidth="46.0" text="Email" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField id="usernameTextField" fx:id="usernameTextField1" alignment="CENTER" layoutX="140.0" layoutY="359.0" prefHeight="27.0" prefWidth="228.0" promptText="ex jming@gmail.com" style="-fx-background-color: transparent;" stylesheets="@../CSS/loginScene.css" />
+                  <Label layoutX="98.0" layoutY="199.0" prefHeight="39.0" prefWidth="321.0" text="Stock Management System">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="151.0" fitWidth="200.0" layoutX="152.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/utar-logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="14.0" layoutY="525.0" text="Prepared By:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="16.0" layoutY="548.0" text="K'NG HUI XUAN, LEE ZHI EN, TEO QIYANG,  WONG YEN MING" />
+               </children>
+            </AnchorPane>
+            <Pane layoutX="297.0" layoutY="505.0" prefHeight="70.0" prefWidth="242.0" style="-fx-background-color: black; -fx-padding: 20; -fx-border-color: white; -fx-border-width: 7; -fx-background-radius: 15; -fx-border-radius: 15;">
+               <children>
+                  <Label fx:id="time" alignment="CENTER" layoutY="7.0" prefHeight="40.0" prefWidth="242.0" text="10:30:43" textFill="WHITE">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="date" alignment="CENTER" layoutY="41.0" prefHeight="20.0" prefWidth="242.0" text="Wednesday, November 16" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

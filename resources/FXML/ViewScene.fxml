@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="576.0" prefWidth="684.0" style="-fx-background-color: #F8F9FA;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.c_ConView">
+    <children>
+      <TableView fx:id="outputTable" layoutX="39.0" layoutY="30.0" onMouseClicked="#rowClick" prefHeight="418.0" prefWidth="606.0">
+        <columns>
+          <TableColumn fx:id="itemNumber" editable="false" prefWidth="51.99999809265137" text="No." />
+          <TableColumn fx:id="type" editable="false" prefWidth="74.39997100830078" text="Type" />
+          <TableColumn fx:id="name" editable="false" prefWidth="136.0" text="Name" />
+          <TableColumn fx:id="price" editable="false" prefWidth="72.800048828125" text="Price (RM)" />
+          <TableColumn fx:id="quantity" editable="false" prefWidth="56.0" text="Quantity" />
+          <TableColumn fx:id="status" editable="false" prefWidth="49.5999755859375" text="Status" />
+          <TableColumn fx:id="detail" editable="false" prefWidth="166.39981079101562" text="Detail" />
+        </columns>
+      </TableView>
+      <Pane fx:id="deleteProductPane" layoutX="381.0" layoutY="480.0" prefHeight="48.0" prefWidth="181.0" styleClass="pane" stylesheets="@../CSS/menuScene.css">
+         <children>
+            <Label layoutX="51.0" layoutY="12.0" prefHeight="25.0" prefWidth="129.0" text="Delete Product">
+               <font>
+                  <Font name="Arial Bold" size="17.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="32.0" fitWidth="39.0" layoutX="9.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/remove-from-cart.png" />
+               </image>
+            </ImageView>
+            <Button mnemonicParsing="false" onAction="#deleteProductButtonClick" prefHeight="48.0" prefWidth="182.0" style="-fx-background-color: transparent;" />
+         </children>
+      </Pane>
+      <Pane fx:id="addProductPane" layoutX="116.0" layoutY="480.0" prefHeight="48.0" prefWidth="181.0" styleClass="pane" stylesheets="@../CSS/menuScene.css">
+         <children>
+            <Label layoutX="53.0" layoutY="12.0" prefHeight="25.0" prefWidth="111.0" text="Add Product">
+               <font>
+                  <Font name="Arial Bold" size="17.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="32.0" fitWidth="39.0" layoutX="9.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/ecommerce.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="-1.0" layoutY="-1.0" mnemonicParsing="false" onAction="#addProductButtonClick" prefHeight="48.0" prefWidth="140.0" style="-fx-background-color: transparent;" />
+         </children>
+      </Pane>
+      <Pane fx:id="updatePane" layoutX="240.0" layoutY="480.0" prefHeight="48.0" prefWidth="204.0" styleClass="pane" stylesheets="@../CSS/menuScene.css">
+         <children>
+            <Label layoutX="53.0" layoutY="12.0" prefHeight="25.0" prefWidth="156.0" text="Select to Update">
+               <font>
+                  <Font name="Arial Bold" size="17.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="32.0" fitWidth="39.0" layoutX="9.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/checkbox.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="-1.0" layoutY="-1.0" mnemonicParsing="false" onAction="#updateButtonClick" prefHeight="48.0" prefWidth="204.0" style="-fx-background-color: transparent;" />
+         </children>
+      </Pane>
+      <Pane fx:id="addStockPane" layoutX="229.0" layoutY="480.0" prefHeight="48.0" prefWidth="226.0" styleClass="pane" stylesheets="@../CSS/menuScene.css">
+         <children>
+            <Label layoutX="53.0" layoutY="12.0" prefHeight="25.0" prefWidth="169.0" text="Select to Add Stock">
+               <font>
+                  <Font name="Arial Bold" size="17.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="32.0" fitWidth="39.0" layoutX="9.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/adds.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="-1.0" layoutY="-1.0" mnemonicParsing="false" onAction="#addStockButtonClick" prefHeight="48.0" prefWidth="226.0" style="-fx-background-color: transparent;" />
+         </children>
+      </Pane>
+      <Pane fx:id="deductStockPane" layoutX="217.0" layoutY="480.0" prefHeight="48.0" prefWidth="250.0" styleClass="pane" stylesheets="@../CSS/menuScene.css">
+         <children>
+            <Label layoutX="53.0" layoutY="12.0" prefHeight="25.0" prefWidth="191.0" text="Select to Deduct Stock">
+               <font>
+                  <Font name="Arial Bold" size="17.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="32.0" fitWidth="39.0" layoutX="9.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/deducts.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="-1.0" layoutY="-1.0" mnemonicParsing="false" onAction="#deductStockButtonClick" prefHeight="48.0" prefWidth="250.0" style="-fx-background-color: transparent;" />
+         </children>
+      </Pane>
+      <Pane fx:id="activatePane" layoutX="144.0" layoutY="480.0" prefHeight="48.0" prefWidth="150.0" styleClass="pane" stylesheets="@../CSS/menuScene.css">
+         <children>
+            <Label layoutX="53.0" layoutY="12.0" prefHeight="25.0" prefWidth="81.0" text="Activate">
+               <font>
+                  <Font name="Arial Bold" size="17.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="32.0" fitWidth="39.0" layoutX="9.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/on.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="-1.0" layoutY="-1.0" mnemonicParsing="false" onAction="#activateButtonClick" prefHeight="48.0" prefWidth="150.0" style="-fx-background-color: transparent;" />
+         </children>
+      </Pane>
+      <Pane fx:id="deactivatePane" layoutX="381.0" layoutY="480.0" prefHeight="48.0" prefWidth="150.0" styleClass="pane" stylesheets="@../CSS/menuScene.css">
+         <children>
+            <Label layoutX="51.0" layoutY="12.0" prefHeight="25.0" prefWidth="95.0" text="Deactivate">
+               <font>
+                  <Font name="Arial Bold" size="17.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="32.0" fitWidth="39.0" layoutX="9.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/off.png" />
+               </image>
+            </ImageView>
+            <Button mnemonicParsing="false" onAction="#deactivateButtonClick" prefHeight="48.0" prefWidth="150.0" style="-fx-background-color: transparent;" />
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>

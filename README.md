@@ -43,9 +43,9 @@ java --module-path "C:\Users\xxx\Downloads\openjfx-23.0.2_windows-x64_bin-sdk\ja
 
 ## 🖼️ Screenshot
 
-![Main UI](Screenshots/main-ui.png)
+![Main UI](Screenshots/main-ui.jpeg)
 
-![Add_Product](screenshots/add-product.png)
+![Add_Product](screenshots/add-product.jpeg)
 
 ## 👥 Group Members
 
